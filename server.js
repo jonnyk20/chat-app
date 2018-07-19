@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 5000;
 var express = require('express');
 var app = express();
 
@@ -6,7 +7,7 @@ var server = http.Server(app);
 
 app.use(express.static('client'));
 
-server.listen(8080, function() {
+server.listen(PORT, function() {
   console.log('Chat server running');
 });
 
