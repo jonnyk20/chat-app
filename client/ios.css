@@ -8,7 +8,7 @@ section {
   max-width: 450px;
   margin: 50px auto;
 }
-section div {
+.message {
   max-width: 255px;
   word-wrap: break-word;
   margin-bottom: 12px;
@@ -90,4 +90,8 @@ p:nth-of-type(even):after {
   background: white;
   border-bottom-right-radius: 10px;
   -webkit-transform: translate(-30px, -2px);
+}
+
+.form {
+  text-align: center;
 }

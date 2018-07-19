@@ -11,7 +11,7 @@ $('document').ready(function() {
 
   socket.on('message', function(msg) {
     $('#history').append([
-      $('<p>', {}).text('msg'),
+      $('<p>', { class: 'message' }).text(msg),
       $('<div>', { class: 'clear' })
     ]);
   });
