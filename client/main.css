@@ -15,19 +15,23 @@ main {
   padding: 20px;
 }
 
-ol {
-  list-style: none;
+main {
   margin-bottom: 20px;
   margin-top: 0;
   padding: 0;
 }
 
-li {
+p {
   padding: 10px;
 }
 
-li:nth-child(odd) {
+p:nth-child(odd) {
   background-color: #e3e3e3;
+  border-radius: 6px;
+}
+
+p:nth-child(even) {
+  color: blue;
   border-radius: 6px;
 }
 

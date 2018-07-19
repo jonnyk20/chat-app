@@ -10,8 +10,9 @@ $('document').ready(function() {
   });
 
   socket.on('message', function(msg) {
-    $('<li>')
-      .text(msg)
-      .appendTo('#history');
+    $('#history').append([
+      $('<p>', {}).text('msg'),
+      $('<div>', { class: 'clear' })
+    ]);
   });
 });
