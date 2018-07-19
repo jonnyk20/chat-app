@@ -24,7 +24,7 @@ section p:after {
   clear: both;
 }
 
-p:nth-child(odd) {
+p:nth-of-type(odd) {
   position: relative;
   padding: 10px 20px;
   color: white;
@@ -33,7 +33,7 @@ p:nth-child(odd) {
   float: right;
 }
 
-p:nth-child(odd):before {
+p:nth-of-type(odd):before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -45,7 +45,7 @@ p:nth-child(odd):before {
   -webkit-transform: translate(0, -2px);
 }
 
-p:nth-child(odd):after {
+p:nth-of-type(odd):after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -58,7 +58,7 @@ p:nth-child(odd):after {
   -webkit-transform: translate(-30px, -2px);
 }
 
-p:nth-child(even) {
+p:nth-of-type(even) {
   position: relative;
   padding: 10px 20px;
   background: #e5e5ea;
@@ -67,7 +67,7 @@ p:nth-child(even) {
   float: left;
 }
 
-p:nth-child(even):before {
+p:nth-of-type(even):before {
   content: '';
   position: absolute;
   z-index: 2;
@@ -79,7 +79,7 @@ p:nth-child(even):before {
   -webkit-transform: translate(0, -2px);
 }
 
-p:nth-child(even):after {
+p:nth-of-type(even):after {
   content: '';
   position: absolute;
   z-index: 3;
