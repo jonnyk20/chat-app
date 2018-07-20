@@ -4,9 +4,17 @@ body {
   font-weight: normal;
 }
 
+main {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
 section {
-  max-width: 450px;
-  margin: 50px auto;
+  height: 300px;
+  overflow: scroll;
+  padding: 25px 25px 0 25px;
+  border: solid 1px #0a93f6;
 }
 .message {
   max-width: 255px;
@@ -92,6 +100,36 @@ p:nth-of-type(even):after {
   -webkit-transform: translate(-30px, -2px);
 }
 
-.form {
+form {
   text-align: center;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+button {
+  border: none;
+  color: #0a93f6;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  border: solid 1px #e5e5eb;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.left {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+.right {
+  display: flex;
+  margin: 5px;
 }

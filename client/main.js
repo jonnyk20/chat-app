@@ -10,9 +10,13 @@ $('document').ready(function() {
   });
 
   socket.on('message', function(msg) {
+    if (!msg) {
+      return;
+    }
     $('#history').append([
       $('<p>', { class: 'message' }).text(msg),
       $('<div>', { class: 'clear' })
     ]);
+    $('#history').scrollTop($('#history')[0].scrollHeight);
   });
 });
