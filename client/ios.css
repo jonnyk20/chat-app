@@ -14,10 +14,9 @@ section {
   height: 300px;
   overflow: scroll;
   padding: 25px 25px 0 25px;
-  border: solid 1px #0a93f6;
 }
 .message {
-  max-width: 255px;
+  max-width: 250px;
   word-wrap: break-word;
   margin-bottom: 12px;
   line-height: 24px;
