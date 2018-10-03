@@ -19,7 +19,7 @@ socket.on('message', function(text) {
   newMessage.innerText = text;
   container.appendChild(newMessage);
 
-  var seperator = document.createElement('div');
+  var seperator = document.createElement('br');
   container.appendChild(seperator);
 
   container.scrollTop = container.scrollHeight;
