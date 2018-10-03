@@ -15,6 +15,11 @@ section {
   overflow: scroll;
   padding: 25px 25px 0 25px;
 }
+
+section div {
+  clear: both;
+}
+
 .message {
   max-width: 250px;
   word-wrap: break-word;
@@ -27,8 +32,8 @@ section p:after {
   clear: both;
 }
 
-.clear {
-  clear: both;
+p {
+  margin: 0px;
 }
 
 p:nth-of-type(odd) {
@@ -106,6 +111,17 @@ form {
   margin: auto;
 }
 
+form div:first-child {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+form div:nth-child(2) {
+  display: flex;
+  margin: 5px;
+}
+
 button {
   border: none;
   color: #0a93f6;
@@ -120,15 +136,4 @@ input {
   border: solid 1px #e5e5eb;
   border-radius: 10px;
   padding: 5px;
-}
-
-.left {
-  flex: 1;
-  padding: 5px;
-  margin: 5px;
-}
-
-.right {
-  display: flex;
-  margin: 5px;
 }
